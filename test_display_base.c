@@ -10,6 +10,7 @@
 #include <sys/types.h>
 #include <getopt.h>
 #include <sys/ioctl.h>
+#include <glib.h>
 
 #include <spice-server/spice.h>
 #include <spice/qxl_dev.h>
@@ -713,7 +714,7 @@ QXLInterface display_sif = {
 Test *ast_new(SpiceCoreInterface *core)
 {
     int port = 5701; //5912;
-    Test *test = g_malloc0(Test, 1);
+    Test *test = g_malloc0(sizeof(Test));
     SpiceServer* server = spice_server_new();
 
     test->qxl_instance.base.sif = &display_sif.base;
