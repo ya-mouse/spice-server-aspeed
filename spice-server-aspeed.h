@@ -1,7 +1,7 @@
 #ifndef __AST_BASE_H__
 #define __AST_BASE_H__
 
-#include <spice.h>
+#include <spice-server/spice.h>
 #include <linux/types.h>
 #include <sys/ioctl.h>
 

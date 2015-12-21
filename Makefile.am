@@ -6,8 +6,9 @@ AM_CPPFLAGS =					\
 	$(SPICE_PROTOCOL_CFLAGS)		\
 	$(NULL)
 
-LDADD =								\
-	$(GLIB2_LIBS)						\
+LDADD =						\
+	$(GLIB2_LIBS)				\
+	$(SPICE_SERVER_LIBS)			\
 	$(NULL)
 
 COMMON_BASE =					\
