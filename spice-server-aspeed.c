@@ -32,7 +32,6 @@
 #include <unistd.h>
 #include <sys/mman.h>
 #include <sys/ioctl.h>
-#include <common/mem.h>
 #include <glib.h>
 
 #include "spice-server-aspeed.h"
@@ -430,7 +429,7 @@ int main(void)
     core = basic_event_loop_init();
     test = ast_new(core);
 
-    kbd = g_malloc0(sizeof(iUSBSpiceKbd,));
+    kbd = g_malloc0(sizeof(iUSBSpiceKbd));
     kbd->sin.base.sif = &kbd_interface.base;
     //test->pointer = g_malloc0(sizeof(iUSBSpicePointer));
 
