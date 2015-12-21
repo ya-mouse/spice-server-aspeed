@@ -23,6 +23,7 @@ sbin_PROGRAMS =				\
 
 spice_server_aspeed_SOURCES =		\
 	$(COMMON_BASE)				\
+	test_display_base.c			\
 	spice-server-aspeed.c			\
 	spice-server-aspeed.h			\
 	$(NULL)
